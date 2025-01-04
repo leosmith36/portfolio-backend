@@ -15,7 +15,7 @@ export async function init() {
 }
 
 export async function close() {
-  await client.db?.close()
+  if (client.db) await client.db.close()
   console.log('Database closed')
 }
 
