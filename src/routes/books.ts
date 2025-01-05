@@ -9,7 +9,8 @@ router.get('/books', async (req: Request, res: Response) => {
       id,
       name,
       author,
-      year
+      year_published,
+      year_read
     FROM books
   `
 
